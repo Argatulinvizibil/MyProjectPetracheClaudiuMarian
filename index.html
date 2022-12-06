@@ -1,106 +1,83 @@
-<!DOCTYPE html>
-<html id="pageID">
+
   <head>
     
     <input id="fast" type="button" class="button" value="Add Cat   " onclick="CreateSQR()">
-    <input id ="slow"type="button" class="button" value="Add Color" onclick="Cat()">
-    <script>
-  let number = 3;
- function CreateSQR(){
-  
-  
- var elemDiv = document.createElement('div');
- elemDiv.style.cssText = "width:300px;height:300px;border-radius:50%;border: thick double #32a1ce; border:100px; margin: 3%;float:left;color:black; font-weight:bold;animation:myanimation 3s infinite;"
- elemDiv.style.background ="url('https://scontent.ftsr1-2.fna.fbcdn.net/v/t39.30808-6/318480398_1553354208436658_1958694217191735755_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=zgxBYc7YlkUAX-r-uV0&_nc_ht=scontent.ftsr1-2.fna&oh=00_AfCFAO0ys4nVXip4dxia01Unzqxs59NncI0pSuOUf9JxHg&oe=6392A371')"
-  document.body.appendChild(elemDiv);
-  number =number++;
- }
+    <input id ="slow<!DOCTYPE html>
+<html id="page">
+<head id="head">
 
 
- function Cat(){ 
-  var elemDiv = document.createElement('div');
- elemDiv.style.cssText = "width:300px;height:300px;border-radius:40%;border: thick double #32a1ce; border:100px; margin: 3%;float:left;color:black; font-weight:bold;animation:myanimation 3s infinite;"
- document.body.appendChild(elemDiv);
-  number =number++;
-  } 
- 
+ <h1 id="h1">CAT FINDER </h1>
 
 
- </script>
-
- <script>
 
 
- function remove(){
-  alert("NOT WORKING YET ");;
+</head>
 
- }
- </script>
-  </head>
-<body id="boddy">
+<body>
 
-  
-<h1>Color Boooohy</h1>
-<div class="cub"></div>
+
+
+
+
+
+<div class="div" onclick="mouseOver1()" id="d1"  >
+  <script>
+    let div1= 1
+    
+  </script>
+  <h1 class="title">Clikkkkee Meee</h1>
+</div>
+
+<div class="div" onclick="mouseOver2()" id="d2"  >
+  <script>
+    let div2 = 2
+    
+  </script>
+  <h1 class="title">Clikkkkee Meee</h1>
+</div>
+
+<div class="div" onclick="mouseOver3()"  id="d3" >
+  <script>
+    let div3 = 3
+    
+  </script>
+  <h1 class="title">Clikkkkee Meee</h1>
+</div>
+<input type="button" class="button" onclick="reload()"  value="Try again ">
+<script>
+  function reload(){
+    window.location.reload()
+  }
+
+</script>
 
 
 <style>
-html,
-.button {
-  background-color: #fa0909;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-#slow{
-  background-color: #098cf8;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  .title{
+    font-style: italic;
+    color: cornsilk;
+    text-align: center;
+    
 
+  }
+  #h1{
+    font-style: italic;
+    color: blue;
+    text-align: center;
+  }
+  #head{
+    height: 300px;
+    width:300px;
 
-}
-
-
-
-
-#boddy {
-  height:auto
-}
-
-#pageID{
-  width: auto;
-  height: auto;
-  background-color: rgb(20, 104, 129);
+  }
+  #page{
+  width:auto;
+  height:auto;
   
-}
+  border-color:rgb(163, 11, 11);
+  animation:myanimation 10s infinite;
 
-
-
-.cub{
-  width:300px;
-  height:300px;
-  border-radius:10%;
-  border-color:whitesmoke;
-  border: 100px;
-  margin: 3%;
-  float:left;
-  color:black;
-  font-weight:bold;
-  animation:myanimation 3s infinite;
-  border-radius: 40%;
   
 }
 
@@ -111,12 +88,113 @@ html,
   75%{background-color:brown;}
   100% {background-color: red;}
 }
+  
     
- </style>
-    
+  
+  .div{
+  width:300px;
+  height:300px;
+  border-radius:10%;
+  border: thick double #32a1ce; 
+  border:100px;
+  margin: 3%;
+  float:left;
+  color:black;
+  font-weight:bold;
+  animation:myanimation 3s infinite;
+  
+}
+
+@keyframes myanimation {
+  0% {background-color: red;}
+  25%{background-color:yellow;}
+  50%{background-color:green;}
+  75%{background-color:brown;}
+  100% {background-color: red;}
+}
+
+  .button {
+  width:100px;
+  height:150px;
+  border-radius:1%;
+  color: red;
+  font-size: large;
+  background-color: beige;
+  border: #32a1ce;
+}
+   
+</style>
 
 
- 
+<script>
+  
+
+let x = Math.floor((Math.random() * 3) + 1);
+function mouseOver1() {
+  
+  if(div1===x){
+    alert("Corrrrectt Bai PRESS BUTON")
+  document.getElementById("d1").style.backgroundImage = "url('https://scontent.ftsr1-2.fna.fbcdn.net/v/t39.30808-6/318480398_1553354208436658_1958694217191735755_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=zgxBYc7YlkUAX-r-uV0&_nc_ht=scontent.ftsr1-2.fna&oh=00_AfCFAO0ys4nVXip4dxia01Unzqxs59NncI0pSuOUf9JxHg&oe=6392A371')";
+  }
+  else{
+    alert("TRY AGAIN RESET");
     
+    
+
+  }
+  
+
+}
+  function mouseOver2(){
+   if (div2===x){
+  alert("Corrrrectt Bai PRESS BUTTON")
+  document.getElementById("d2").style.backgroundImage = "url('https://scontent.ftsr1-2.fna.fbcdn.net/v/t39.30808-6/318480398_1553354208436658_1958694217191735755_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=zgxBYc7YlkUAX-r-uV0&_nc_ht=scontent.ftsr1-2.fna&oh=00_AfCFAO0ys4nVXip4dxia01Unzqxs59NncI0pSuOUf9JxHg&oe=6392A371')";
+   }
+   else{
+    alert("TRY AGAIN RESET");
+   
+    
+
+  }
+  
+
+
+
+} 
+
+  function mouseOver3(){
+ if(div3===x){
+  alert("Corrrrectt Bai Pula")
+  document.getElementById("d3").style.backgroundImage = "url('https://scontent.ftsr1-2.fna.fbcdn.net/v/t39.30808-6/318480398_1553354208436658_1958694217191735755_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=zgxBYc7YlkUAX-r-uV0&_nc_ht=scontent.ftsr1-2.fna&oh=00_AfCFAO0ys4nVXip4dxia01Unzqxs59NncI0pSuOUf9JxHg&oe=6392A371')";
+
+}
+else{
+    alert("TRY AGAIN RESET");
+   
+   
+
+  }
+  
+
+
+  }
+
+
+  
+  
+  
+
+
+
+
+</script>
+<script>
+  alert("RESET");
+  await sleep(3000);
+  Window.location.reload();
+  
+</script>
 </body>
+
+
 </html>
